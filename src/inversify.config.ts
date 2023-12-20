@@ -57,7 +57,6 @@ export {
 };
 
 export class Dependency {
-  // Variables
   private static defaultContainer: Container;
 
   /**

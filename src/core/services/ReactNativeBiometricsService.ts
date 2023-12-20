@@ -1,4 +1,3 @@
-// reactNativeBiometricsService.ts
 import ReactNativeBiometrics from 'react-native-biometrics';
 import {BiometricsService} from './BiometricsService';
 

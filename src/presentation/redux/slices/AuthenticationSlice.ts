@@ -13,7 +13,6 @@ export const authenticateWithBiometrics = createAsyncThunk<boolean>(
         SERVICE_TYPES.Biometrics,
       );
 
-      // Check if biometrics is available
       const isBiometricsAvailable =
         await biometricsService.isBiometricsAvailable();
 
@@ -21,7 +20,6 @@ export const authenticateWithBiometrics = createAsyncThunk<boolean>(
         throw new Error('Biometrics not available');
       }
 
-      // Proceed with authentication
       const result = await biometricsService.authenticate();
       return result;
     } catch (error: any) {
